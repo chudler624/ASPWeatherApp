@@ -19,17 +19,17 @@ namespace WeatherApp.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult GetWeatherForcast(string zipCode)
         {
-            return View();
+            //get 5 day forcast
+
+
+
+            var fiveDayWeatherApi = new WeatherApi();
+            var result = fiveDayWeatherApi.GetFiveDayForcast(zipCode);
+
+            return View("CurrentWeather", result);
         }
-
-        //public IActionResult CurrentWeather()
-        //{
-        //    var currentWeatherApi = new CurrentWeatherApi();
-
-        //    return View();
-        //}
 
         //public IActionResult FiveDayWeather()
         //{
@@ -37,6 +37,11 @@ namespace WeatherApp.Controllers
 
         //    return View();
         //}
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

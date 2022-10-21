@@ -16,3 +16,26 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+h3 {
+    text-align: center
+}
+
+#searchbar {
+    padding: 100px;
+    padding-left:400px;
+    padding-right:400px;
+    
+}
+
+#cityname {
+    text-align:center
+}
+
+#temperature{
+    text-align: center;
+}
+
+#description{
+    text-align: center;
+}

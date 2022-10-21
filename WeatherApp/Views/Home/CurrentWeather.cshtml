@@ -1,5 +1,97 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model CurrentWeatherModel;
+
+<h3>
+<span class="cityname">
+  CityName: @Model.CityName
+</span>
+<span class="weathericonn">
+  WeatherIcon: @Model.WeatherIcon
+</span>
+<span class="icon">
+  Icon: @Model.Icon
+  <img src=@GetIconsById(Model.Icon) />
+</span>
+<span class="description">
+  @Model.Description
+</span>
+<span class="temperature">
+  @Model.Temperature °F
+</span>
+</h3>
+
 @{
+    string GetIconsById(string weatherIconCode)
+    {
+        switch (weatherIconCode)
+        {
+            case "t01d":
+            case "t01n":
+                return "link URL";
+
+            default:
+                //what happens when none of your cases match?
+                return "";
+        }
+
+    }
+
+
+
+
+}
+
+
+
+
+    public string GetIconById(string weatherIconCode)
+    {
+        switch (weatherIconCode)
+        {
+            case "t01d": // t02d || t02n || t03d || t03n):
+            case "t01n":
+                return "https://www.weatherbit.io/static/img/icons/t01d.png/";
+
+
+            //case (t04d || t04n || t05d || t05n):
+            //    return "https://www.weatherbit.io/static/img/icons/t04d.png";
+
+
+
+            //    case (d01d || d01n || d02d || d02n || d03d || d03n):
+            //    return "https://www.weatherbit.io/static/img/icons/d03d.png";
+            //break
+            //    case (r01d || r01n || r02d || r02n || f01d || f01n || r04d || r04n || r06d || r06n):
+            //    return "https://www.weatherbit.io/static/img/icons/r01d.png";
+            //break;
+            //    case (r03d || r03n):
+            //    return "https://www.weatherbit.io/static/img/icons/r03d.png";
+            //break;
+            //    case (r05d || r05n):
+            //    return "https://www.weatherbit.io/static/img/icons/r05d.png";
+            //break;
+            //    case (s01d || s01n || s02d || s02n || s03d || s03n || s04d || s04n || s06d || s06n):
+            //    return "https://www.weatherbit.io/static/img/icons/s02d.png";
+            //break;
+            //    case (s05d || s05n):
+            //    return "https://www.weatherbit.io/static/img/icons/s05d.png";
+            //break;
+            //    case (a01d || a01n || a02d || a02n || a03d || a03n || a04d || a04n || a05d || a05n || a06d || a06n):
+            //    return "https://www.weatherbit.io/static/img/icons/a03d.png";
+            //break;
+            //    case (c01d || c01n):
+            //    return "https://www.weatherbit.io/static/img/icons/c01d.png";
+            //break;
+            //    case (c02d || c02n):
+            //    return "https://www.weatherbit.io/static/img/icons/c02d.png";
+            //break;
+            //    case (c03d || c03n):
+            //    return "https://www.weatherbit.io/static/img/icons/c03d.png";
+            //break;
+            //    case (c04d || c04n):
+            //    return "https://www.weatherbit.io/static/img/icons/c04d.png";
+            //break;
+            //    case (u00d || u00n):
+            //    return "https://www.weatherbit.io/static/img/icons/u00d.png";
+            //break;
+        }
 }
