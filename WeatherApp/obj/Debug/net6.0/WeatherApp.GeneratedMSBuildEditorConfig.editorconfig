@@ -15,20 +15,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\chudl\Desktop\Final Project\WeatherApp\WeatherApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/chudl/Desktop/Final Project/WeatherApp/WeatherApp/Views/Home/CurrentWeather.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXJyZW50V2VhdGhlci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/chudl/Desktop/Final Project/WeatherApp/WeatherApp/Views/Home/FiveDayWeather.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGaXZlRGF5V2VhdGhlci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/chudl/Desktop/Final Project/WeatherApp/WeatherApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/chudl/Desktop/Final Project/WeatherApp/WeatherApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chudl/Desktop/Final Project/WeatherApp/WeatherApp/Views/Home/WeatherResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZWF0aGVyUmVzdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/chudl/Desktop/Final Project/WeatherApp/WeatherApp/Views/Shared/Error.cshtml]

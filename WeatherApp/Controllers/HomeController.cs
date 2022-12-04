@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using WeatherApp.Logic;
 using WeatherApp.Models;
-
 
 namespace WeatherApp.Controllers
 {
@@ -19,24 +19,15 @@ namespace WeatherApp.Controllers
             return View();
         }
 
-        public IActionResult GetWeatherForcast(string zipCode)
+        public IActionResult WeatherResult(string zipCode)
         {
-            //get 5 day forcast
+            var weatherApi = new WeatherApi();
+            var weatherModel = weatherApi.GetForecast(zipCode);
 
-
-
-            var fiveDayWeatherApi = new WeatherApi();
-            var result = fiveDayWeatherApi.GetFiveDayForcast(zipCode);
-
-            return View("CurrentWeather", result);
+            return View(weatherModel);
         }
 
-        //public IActionResult FiveDayWeather()
-        //{
-        //    var fiveDayWeatherApi = new FiveDayWeatherApi();
-
-        //    return View();
-        //}
+               
         public IActionResult Privacy()
         {
             return View();
